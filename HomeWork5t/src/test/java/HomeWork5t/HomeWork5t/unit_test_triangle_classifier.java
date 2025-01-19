@@ -13,11 +13,11 @@ public class unit_test_triangle_classifier {
     @Test
     public void unitest() {
         // Stub the mocked methods
-        Mockito.when(IsTriangle.test(1, 1, 3)).thenReturn(true);  // Triangle inequality holds
-        //Mockito.when(IsEquilateral.test(1, 1, 3)).thenReturn(true); // Equilateral condition
-        Mockito.when(IsIsosceles.test(1, 1, 3)).thenReturn(true);
+        Mockito.when(IsTriangle.test(2, 2, 3)).thenReturn(true);  // Triangle inequality holds
+        //Mockito.when(IsEquilateral.test(2, 2, 2)).thenReturn(true); // Equilateral condition
+        Mockito.when(IsIsosceles.test(2, 2, 3)).thenReturn(true);
 
-        int a = 1, b = 1, c = 3;
+        int a = 2, b = 2, c = 3;
         String expected_result = Triangle_Types.isosceles.toString();
         String actual_result = triTriangleClassifier.classifyTriangle(a, b, c);
         // Assertions
